@@ -17,4 +17,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-family), sans-serif;
+  font-variation-settings: var(--font-weight-text);
+  color: var(--text-color);
+  background-color: var(--bg-color);
 }
