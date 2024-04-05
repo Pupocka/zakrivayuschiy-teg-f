@@ -17,8 +17,135 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family);
   font-variation-settings: var(--font-weight-text);
   color: var(--text-color);
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ---HEADER--- */
+
+.header {
+  text-align: center;
+  margin: 100px 0;
+  padding: 120px 14px 25px;
+  border: 2px solid var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.header__link {
+  text-transform: uppercase;
+  font-size: var(--font-size);
+  text-decoration: none;
+}
+
+.header__title {
+  margin: 21px 0 25px;
+  font-size: var(--font-size-title);
+  text-transform: uppercase;
+}
+
+.theme-menu__list {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: start;
+  margin: 0 140px;
+}
+
+.theme-menu__item {
+  position: relative;
+}
+
+.theme-menu__button {
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 0;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  left: -20px;
+}
+
+/* ---MAIN--- */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+
+/* ---CARDS--- */
+
+
+.card {
+  border: 2px solid var(--text-color);
+  background-color: var(--bg-color);
+  font-family: var(--second-family);
+}
+
+.card__title {
+  padding: 4px 10px 6px;
+  font-size: 18px;
+  font-variation-settings: var(--font-weight-title);
+}
+
+.card__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 25px 25px;
+  font-size: 18px;
+}
+
+.card__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card___image-container {
+  position: relative;
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+}
+
+.card__icon-button {
+  padding: 0;
+  width: 39px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card__button {
+  background: transparent;
+  font-family: var(--font-family);
+  width: 130px;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.card__like-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
 }
