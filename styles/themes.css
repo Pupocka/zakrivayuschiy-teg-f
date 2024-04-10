@@ -6,8 +6,8 @@
 */
 
 :root.theme-light {
-  --font-weight-title: 'wght' 700;
-  --font-weight-text: 'wght' 400;
+  --font-weight-title: 700;
+  --font-weight-text: 400;
   --bg-color: #fff;
   --text-color: #000;
   --btn-text-color: #fff;

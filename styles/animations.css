@@ -13,6 +13,87 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.like-icon .heart {
+  transform-origin: center;
+}
+
+.like-icon {
+  fill: var(--text-color);
+  position: relative;
+  z-index: 1;
+}
+
+.core {
+  fill: var(--bg-color);
+  transition: fill 0.3s linear 0.03s;
+}
+
+.main-body {
+  fill: var(--bg-color);
+  transition: fill 0.3s linear;
+}
+
+.contour {
+  fill: var(--text-color);
+  transition: fill 0.1s linear;
+}
+
+.sparks {
+  opacity: 0;
+  fill: var(--sparks-fill-color);
+}
+
+.like-icon:hover {
+
+  .core {
+    fill: var(--text-color);
+    transition: fill 0.3s linear;
+  }
+
+  .main-body {
+    fill: var(--text-color);
+    transition: fill 0.3s linear 0.05s;
+  }
+}
+
+.like-icon:active {
+
+  .core {
+    fill: var(--sparks-fill-color);
+    transition: fill 0.3s linear;
+  }
+
+  .main-body {
+    fill: var(--sparks-fill-color);
+    transition: fill 0.3s linear 0.05s;
+  }
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--sparks-fill-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--sparks-fill-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--sparks-fill-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart 0.3s ease-in 0.1s 1 alternate;
+  -webkit-animation: heart 0.3s ease-in 0.3s 1 alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s ease-in 0.3s 1 alternate;
+  -webkit-animation: sparks 0.3s ease-in 0.3s 1 alternate;
+}
+
 @keyframes moving {
 
   0% {
@@ -33,12 +114,10 @@
 
   from {
     scale: 1;
-    transform-origin: center;
   }
 
   to {
     scale: 1.5;
-    transform-origin: center;
   }
 }
 
@@ -51,14 +130,4 @@
   to {
     opacity: 1;
   }
-}
-
-.like-icon.is-liked .heart {
-  animation: heart 0.3s ease-in 0.3s 1 alternate;
-  -webkit-animation: heart 0.3s ease-in 0.3s 1 alternate;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s 1 alternate;
-  -webkit-animation: sparks 0.3s ease-in 0.3s 1 alternate;
 }
