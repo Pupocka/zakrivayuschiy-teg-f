@@ -15,7 +15,7 @@
 */
 
 .page {
-  padding: 100px 0;
+  padding: 98px 0;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-family);
@@ -156,6 +156,7 @@
   gap: 26px;
   padding: 25px;
   font-size: 18px;
+  font-variation-settings: 'wght' var(--font-weight-text, 400);
 }
 
 .card__image {
@@ -368,7 +369,7 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.pencil {
+.pencil-effect {
   background-size: cover;
   background-position: center;
 }
@@ -386,14 +387,12 @@
 }
 
 .infrared-effect {
-  background-image: url(images/scale_2400.jpeg);
   background-size: cover;
   background-position: center;
   filter: hue-rotate(180deg) saturate(2);
 }
 
 .colored-chalkboard-effect {
-  background-image: url(images/scale_2400.jpeg);
   background-size: cover;
   background-position: center;
 }
