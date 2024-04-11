@@ -28,8 +28,8 @@
 }
 
 :root.theme-dark {
-  --font-weight-title: 'wght' 785;
-  --font-weight-text: 'wght' 465;
+  --font-weight-title: 785;
+  --font-weight-text: 465;
   --bg-color: #000;
   --text-color: #00cc14;
   --btn-text-color: #00cc14;
@@ -52,8 +52,8 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-    --font-weight-title: 'wght' 700;
-    --font-weight-text: 'wght' 400;
+    --font-weight-title: 700;
+    --font-weight-text: 400;
     --bg-color: #fff;
     --text-color: #000;
     --btn-text-color: #fff;
@@ -77,8 +77,8 @@
 @media (prefers-color-scheme: dark) {
 
   :root {
-    --font-weight-title: 'wght' 785;
-    --font-weight-text: 'wght' 465;
+    --font-weight-title: 785;
+    --font-weight-text: 465;
     --bg-color: #000;
     --text-color: #00cc14;
     --btn-text-color: #00cc14;
